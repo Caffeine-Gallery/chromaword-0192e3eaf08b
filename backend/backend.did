@@ -1,0 +1,8 @@
+service : {
+  checkGuess: (text) -> (record {
+                           correct: bool;
+                           feedback: text;
+                         }) query;
+  getCurrentWord: () -> (text) query;
+  startGame: () -> (text);
+}
